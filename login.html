@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="login.css">
+	<title>Coffe Gendut</title>
+</head>
+<body>
+	<div class="login">
+		<a href="index.html" ><img src="remove.png" align="right"width="20" height="20" ></a> 
+		<div class="title">Hello Again!</div>
+		<div class="des">
+			Enter your account to start coffe
+		</div>
+		<div class="group">
+			<input type="text" placeholder="Enter username">
+		</div>
+		<div class="group">
+			<input type="password" id="inputPassword" placeholder="Password">
+			<span id="showPassword">
+				<ion-icon name="eye-outline"></ion-icon>
+				<ion-icon name="eye-off-outline"></ion-icon>
+			</span>
+		</div>
+		<div class="recovery">
+			<a href="">recovery password</a>
+		</div>
+		<div class="signIn">
+			<button>Sign In</button>
+		</div>
+		<div class="or">
+			Or continue with
+		</div>
+		<div class="list">
+			<div class="item">
+				
+				<a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue%26pli%3D1&ec=GAlAwAE&hl=in&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S134233356%3A1713776391146541&theme=mn&ddm=0"><img src="google.png" /></a>
+			</div>
+			<div class="item">
+				<a href="https://id-id.facebook.com/login.php/"><img src="fb.png" /></a>
+			</div>
+			<div class="item">
+				
+				<a href="https://twitter.com/i/flow/login"><img src="twiter.png" /></a>
+			</div>
+		</div>
+		<div class="register">
+			Not a member? <a href="register.html">Register now</a>
+		</div>
+
+	</div>
+    <script>
+	let showPassword = document.getElementById('showPassword');
+let inputPassword = document.getElementById('inputPassword');
+showPassword.onclick = function(){
+    if(inputPassword.type == 'password'){
+        inputPassword.type = 'text';
+        showPassword.classList.add('show');
+    }else{
+        inputPassword.type = 'password';
+        showPassword.classList.remove('show');
+    }
+}
+</script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

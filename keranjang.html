@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Gendut</title>
+    <link rel="stylesheet" href="keranjang.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><h1>Coffe Gendut</h1></div>
+        <ul class="menu">
+      </div>    
+      <li><a href="index.html" ></i> Home</i></a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Shop</a>
+        <div class="dropdown-content">
+          <a href="noncoffe.html" >Non Coffe</a>
+          <a href="coffe.html">Coffe</a>
+          <a href="desert.html">Dessert</a>
+        </div>
+    </li>
+    
+      <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+      <li><a href="keranjang.html"><i class="fa fa-shopping-cart"></i></a></li>
+      </ul>
+    </nav>
+
+    
+    <div class="container">
+      <h1>1</h1>
+        <header>
+            <h1>Coffe Gendut cart</h1>
+            <style>
+                h1{
+                    color: black;
+                }
+            </style>
+
+            <div class="shopping">
+                <img src="email.png">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <h1>Card</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <a href="login.html">
+            <div class="total">0</div>
+        </a>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+
+    <footer>
+
+<!-- tombol keatas -->
+         <img src="icon.png" class="btn btn-danger btn-floating btn-lg"  id="btn-back-to-top" alt="buttonpng" border="0" width="47" height="47">
+       </button>
+       <!-- <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top"><i class="fas fa-angle-double-up"></i></button> -->
+       <style>
+         #btn-back-to-top {
+           position: fixed;
+           bottom: 20px;
+           right: 20px;
+           display: none;
+         }
+       </style>
+       <script>
+                 //Get the button
+         let mybutton = document.getElementById("btn-back-to-top");
+ 
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function () {
+           scrollFunction();
+         };
+ 
+         function scrollFunction() {
+           if (
+             document.body.scrollTop > 20 ||
+             document.documentElement.scrollTop > 20
+           ) {
+             mybutton.style.display = "block";
+           } else {
+             mybutton.style.display = "none";
+           }
+         }
+         // When the user clicks on the button, scroll to the top of the document
+         mybutton.addEventListener("click", backToTop);
+ 
+         function backToTop() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+         }
+       </script>
+       <!-- tombol keatas -->
+
+       <!-- footer -->
+        <div class="container">
+            <div class="row">
+                  <div class="col" id="company">
+                      <img src="icon.ico" alt="" class="logo">
+                      <p>
+                        Kami dapat memastikan bahwa website coffe kami tidak menirukan website dari coffe yang lain dan coffe ini bahan yang terbaik yang dipilih khusus untuk pelanggan supaya menikmati kopi dengan nikmat.
+                      </p>
+                      <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                  </div>
+
+
+                  <div class="col" id="menu">
+                     <h3>Menu</h3>
+                     <div class="links">
+                        <a href="index.html">Home</a>
+                        <a href="noncoffe.html">Non Coffe</a>
+                        <a href="coffe.html">Coffe</a>
+                        <a href="desert.html">Dessert</a>
+                     </div>
+                  </div>
+
+                  <div class="col" id="useful-links">
+                     <h3>Links</h3>
+                     <div class="links">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Help</a>
+                        <a href="register.html">Register</a>
+                     </div>
+                  </div>
+            </div>
+            <!-- footer -->
+     </footer>
+     <style>
+        footer{
+    background-color: #000000ff;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem 1rem;
+}
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+
+}
+.row{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.col{
+   min-width: 250px;
+   color:#f2f2f2f2;
+   font-family: poppins;
+   padding:0 2rem;
+}
+.col .logo{
+   width: 100px;
+   margin-bottom:25px;
+}
+.col h3{
+   color:#ff014fff;
+   margin-bottom: 20px;
+   position: relative;
+   cursor: pointer;
+}
+.col h3::after{
+   content: '';
+   height:3px;
+   width:0px;
+   background-color: #ff014fff;
+   position: absolute;
+   bottom: 0;
+   left:0;
+   transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+   width:30px
+}
+.col .social a i{
+   color:#ff014fff;
+   margin-top:2rem;
+   margin-right: 5px;
+   transition: 0.3s ease;
+}
+.col .social a i:hover{
+   transform: scale(1.5);
+   filter:grayscale(25);
+}
+.col .links a{
+   display: block;
+   text-decoration: none;
+   color:#f2f2f2;
+   margin-bottom: 5px;
+   position: relative;
+   transition: 0.3s ease;
+}
+.col .links a::before{
+   content:'';
+   height: 16px;
+   width:3px;
+   position: absolute;
+   top:5px;
+   left:-10px;
+   background-color: #ff014fff;
+   transition: 0.5s ease;
+   opacity: 0;
+}
+.col .links a:hover::before{
+   opacity: 1;
+}
+.col .links a:hover{
+   transform: translateX(-8px);
+   color:#ff014fff;
+}
+.col .contact-details{
+   display: inline-flex;
+   justify-content: space-between;
+}
+.col .contact-details i{
+   margin-right:15px;
+}
+.row .form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:2rem 0;
+}
+.row .form input{
+   background-color: rgb(32, 26, 26);
+   color: rgb(255, 255, 255);
+   border:0;
+   outline:none;
+   padding:14px 20px;
+   border-radius: 6px;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+.form button{
+   padding:14px 20px;
+   border:0;
+   border-radius: 6px;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+   background-color: #ff014fff;
+}
+
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+ .row{
+   flex-direction: column;
+ }
+ .col{
+   width: 100%;
+   text-align: left;
+   margin-bottom: 25px;
+ }
+}
+@media(max-width:768px)
+{
+ .row{
+   flex-direction: column;
+ }
+ .col{
+   width: 100%;
+   text-align: left;
+   margin-bottom: 20px;
+ }
+}
+     </style>
+
+    <script src="keranjang.js"></script>
+</body>
+</html>
